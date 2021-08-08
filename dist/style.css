@@ -1,6 +1,5 @@
 html {
-  background-color: #36393f;
-  height: 100%;
+  height: 100vh;
   width: 100%;
   margin: 0;
   padding: 0;
@@ -8,9 +7,27 @@ html {
 
 body {
   margin: 0;
+  background-image: url("./images/devilsgolfcourse.png");
+  position: relative;
 }
 
 .content {
   display: flex;
   flex-direction: column;
+}
+
+.banner {
+  background-color: #5a5a5a;
+  height: 100px;
+  opacity: 0.5;
+}
+
+#compass {
+  margin: 10px;
+  margin-left: 4%;
+}
+
+.main {
+  height: 100vh;
+  width: 100%;
 }
