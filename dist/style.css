@@ -7,7 +7,7 @@ html {
 
 body {
   margin: 0;
-  background-image: url("./images/devilsgolfcourse.png");
+  background-image: url('./images/devilsgolfcourse.png');
   position: relative;
 }
 
@@ -20,19 +20,58 @@ body {
   height: 130px;
   background-color: #5a5a5a4d;
   transition: 0.6s;
+  display: flex;
+  flex-direction: row;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 175%;
+  font-weight: 500;
+  vertical-align: baseline;
 }
 
 .banner:hover {
   background-color: rgba(90, 90, 90, 0.5);
-  transition: 0.7s;
+  transition: 0.5s;
   height: 110px;
 }
 
-#compass {
-  height: 5em;
-  width: 5em;
-  margin-left: 30px;
-  margin-top: 15px;
+.bannerItem {
+  transition-duration: 0.3s;
+}
+
+.bannerItem:hover {
+  color: white;
+  transition-duration: 0.3;
+}
+
+#bannerItem1 {
+  flex: 3;
+  margin: auto;
+  padding-left: 50px;
+}
+
+#bannerItem2 {
+  flex: 0.4;
+  margin: auto;
+}
+
+#bannerItem3 {
+  flex: 0.4;
+  margin: auto;
+}
+
+#bannerItem4 {
+  flex: 0.4;
+  margin: auto;
+}
+
+#bannerItem5 {
+  flex: 0.3;
+  margin: auto;
+}
+
+#bannerItem6 {
+  flex: 0.3;
+  margin: auto;
 }
 
 .main {
