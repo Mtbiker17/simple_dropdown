@@ -1,6 +1,8 @@
 let itemTwo = document.getElementById('bannerItem2');
-let itemTwoContainer = document.getElementById('itemTwoContainer');
-itemTwo.addEventListener('mouseover', () => {
-  itemTwoContainer.classList.toggle('show');
-  console.log('worked');
+
+itemTwo.addEventListener('mouseenter', (e) => {
+  document.getElementById('itemTwoContainer').style.display = 'block';
+  itemTwo.addEventListener('mouseleave', () => {
+    document.getElementById('itemTwoContainer').style.display = 'none';
+  });
 });
